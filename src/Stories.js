@@ -1,81 +1,24 @@
 export default function Stories(){
+    const contStorie = [
+        {src:"assets/img/9gag.svg", texto: "9gag"},
+        {src: "assets/img/meowed.svg" , texto:"meowed"},
+        {src: "assets/img/barked.svg", texto:"barked"},
+        {src: "assets/img/nathanwpylestrangeplanet.svg", texto:"nathanwpylestrangeplanet"},
+        {src: "assets/img/wawawicomics.svg", texto:"wawawicomics"},
+        {src: "assets/img/respondeai.svg", texto:"respondeai"},
+        {src: "assets/img/filomoderna.svg", texto:"filomoderna"},
+        {src: "assets/img/memeriagourmet.svg", texto:"memeriagourmet"}
+    ]
     return(
-        <div class="stories">
-          <div class="story">
+        <ul class="stories">
+            {contStorie.map((s) => <li class="story">
             <div class="imagem">
-              <img src="assets/img/9gag.svg"/>
+              <img src={s.src}/>
             </div>
             <div class="usuario">
-              9gag
+              {s.texto}
             </div>
-          </div>
-
-          <div class="story">
-            <div class="imagem">
-              <img src="assets/img/meowed.svg"/>
-            </div>
-            <div class="usuario">
-              meowed
-            </div>
-          </div>
-
-          <div class="story">
-            <div class="imagem">
-              <img src="assets/img/barked.svg"/>
-            </div>
-            <div class="usuario">
-              barked
-            </div>
-          </div>
-
-          <div class="story">
-            <div class="imagem">
-              <img src="assets/img/nathanwpylestrangeplanet.svg"/>
-            </div>
-            <div class="usuario">
-              nathanwpylestrangeplanet
-            </div>
-          </div>
-
-          <div class="story">
-            <div class="imagem">
-              <img src="assets/img/wawawicomics.svg"/>
-            </div>
-            <div class="usuario">
-              wawawicomics
-            </div>
-          </div>
-
-          <div class="story">
-            <div class="imagem">
-              <img src="assets/img/respondeai.svg"/>
-            </div>
-            <div class="usuario">
-              respondeai
-            </div>
-          </div>
-
-          <div class="story">
-            <div class="imagem">
-              <img src="assets/img/filomoderna.svg"/>
-            </div>
-            <div class="usuario">
-              filomoderna
-            </div>
-          </div>
-
-          <div class="story">
-            <div class="imagem">
-              <img src="assets/img/memeriagourmet.svg"/>
-            </div>
-            <div class="usuario">
-              memeriagourmet
-            </div>
-          </div>
-
-          <div class="setinha">
-            <ion-icon name="chevron-forward-circle" role="img" class="md hydrated" aria-label="chevron forward circle"></ion-icon>
-          </div>
-        </div>
+          </li>)}
+        </ul>
     );
 }

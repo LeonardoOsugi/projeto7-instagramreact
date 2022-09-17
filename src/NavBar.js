@@ -1,6 +1,6 @@
 export default function NavBar(){
     return(
-        <div class="navbar">
+    <div class="navbar">
       <div class="container">
         <div class="logo">
           <ion-icon name="logo-instagram" role="img" class="md hydrated" aria-label="logo instagram"></ion-icon>
