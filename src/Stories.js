@@ -18,6 +18,9 @@ export default function Stories(){
             <div class="usuario">
               {s.texto}
             </div>
+            <div class="setinha">
+               <ion-icon name="chevron-forward-circle" role="img" class="md hydrated" aria-label="chevron forward circle"></ion-icon>
+            </div>
           </li>)}
         </ul>
     );
