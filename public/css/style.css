@@ -352,6 +352,7 @@
       background-color: transparent;
       border: none;
       width: 100%;
+      margin-top: 50px;
     }
   
     .post:first-child {
